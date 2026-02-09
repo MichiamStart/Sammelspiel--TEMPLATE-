@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sprite Game</title>
+	<link rel="stylesheet" href="./css/spritegame.css">
+	<script src="./js/spritegame_detectCollisions.js" defer></script>
+	<script src="./js/spritegame_keyevents.js" defer></script>
+	<script src="./js/spritegame_player.js" defer></script>
+	<script src="./js/spritegame_main.js" defer></script>
+	<script src="./js/spritegame_loop.js" defer></script>
+</head>
+
+<body>
+	<div id="start">
+		<img src="img/meinMenu.png" alt="">
+	</div>
+	<div id="game">
+		<div id="dashboard">
+			<div id="startButton" onclick="startGame()">START GAME</div>
+			<div id="debug_output"></div>
+		</div>
+
+		<div id="surface">
+			<div id="player">
+				<img id="spriteImg" src="./img/mario.png" alt="sprite" />
+			</div>
+			<div id="redBox"><!--BOX FÜR COLLISSION-DETECTION-BEISPIEL--></div>
+		</div>
+		<div id="floor"></div>
+		<this></this>
+	</div>
+</body>
+
+</html>
